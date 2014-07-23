@@ -1,7 +1,9 @@
-﻿using Microsoft.Owin;
+﻿using BigDataScienceHub;
+using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(BigDataScienceHub.Startup))]
+[assembly: OwinStartup(typeof (Startup))]
+
 namespace BigDataScienceHub
 {
     public partial class Startup
